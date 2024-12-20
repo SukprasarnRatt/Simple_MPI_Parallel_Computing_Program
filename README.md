@@ -54,9 +54,11 @@ Node 3 writes 4 doubles:
 2.000000
 3.000000
 Time taken to broadcast array of 4 doubles: 0.000065 seconds
-```
 
 The program ran with 4 processes across the nodes specified in the host_file. Each process printed its received array, confirming successful broadcasting.
+
+'''
+
 ---
 
 
