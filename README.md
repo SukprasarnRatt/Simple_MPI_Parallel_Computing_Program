@@ -30,5 +30,31 @@ This repository contains implementation of MPI-based parallel computing programs
 
 ## How To Run
 
-### **Broadcasting Array**
-After setting up the cluster with 3 virtual machines and 1 NFS server. This program uses MPI (Message Passing Interface) to demonstrate parallel broadcasting of an array of doubles from one root process to all other processes. 
+### **Broadcasting Array Program**
+After setting up the cluster with 3 virtual machines and 1 NFS server. This program uses MPI (Message Passing Interface) to demonstrate parallel broadcasting of an array of doubles from one root process to all other processes. For this program root process (rank 0) broadcast array of doubles to all other processes in a distributed environment. 
+
+We can run program by using command below:
+
+```bash
+[cc@2074557-3 Assignment2]$ /usr/lib64/mpich/bin/mpirun -n 4 -f host_file ./broadcast_doubles
+Defining 4 doubles ...
+Node 2 writes 4 doubles:
+Node 1 writes 4 doubles:
+0.000000
+0.000000
+Node 3 writes 4 doubles:
+1.000000
+1.000000
+0.000000
+2.000000
+2.000000
+1.000000
+3.000000
+3.000000
+2.000000
+3.000000
+Time taken to broadcast array of 4 doubles: 0.000065 seconds
+```
+---
+
+
