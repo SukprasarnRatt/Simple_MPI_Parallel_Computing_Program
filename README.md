@@ -27,3 +27,8 @@ This repository contains implementation of MPI-based parallel computing programs
   Generate a Mandelbrot set visualization using parallel computation.
 
 ---
+
+## How To Run
+
+### **Broadcasting Array**
+After setting up the cluster with 3 virtual machines and 1 NFS server. This program uses MPI (Message Passing Interface) to demonstrate parallel broadcasting of an array of doubles from one root process to all other processes. 
